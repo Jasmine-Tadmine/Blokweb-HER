@@ -5,15 +5,15 @@ a {
 /*header*/
 header {
     background-color: #fff;
-    margin: -0.5em -0.5em -0.5em -1em;
+    margin:-0.5em -0.5em -0.5em -1em;
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 
 header img:first-of-type {
-    max-height: 4.5em;
+    max-height: 5.5em;
     margin: 0.5em 0.5em 0.5em 1em;
 }
 
@@ -22,7 +22,7 @@ h1 {
     font-size: 2.1em;
     font-weight: 100;
     color: #00D66C;
-    margin: 0.5em;
+    margin: 1em;
 }
 
 header div {
@@ -280,6 +280,12 @@ footer > img {
     visibility: hidden;
 }
 
+
+#stories {
+    display: block;
+    margin: 1em auto 0 auto;
+}
+
 /*Inlog pagina*/
 
 #inloggen {
@@ -343,5 +349,10 @@ form:last-child fieldset {
 }
 
 @media (max-width: 64em) {
-
+    #mobiel {
+        display: block;
+        visibility: visible;
+        margin: -40em auto 9em auto;
+        width: 80%
+    }
 }
