@@ -5,6 +5,7 @@ a {
 /*header*/
 header {
     background-color: #ff5;
+    margin: -0.5em;
     display: flex;
     justify-content: space-between;
 }
