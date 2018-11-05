@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inloggen</title>
+    <link rel="stylesheet" href="../Css/styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../Images/transavia-logo.png" alt=""></a>
+        <div>
+        <h1>geschiedenis</h1>
+        <h1>favoriet</h1>
+        <h1>downloads</h1>
+        <a href="inloggen.html"><h1>Inloggen</h1></a>
+        </div>
+    </header>
+    <nav class="algemeen">
+        <form method="get" action="zoek%20blij.html">
+            <p>
+                <label for="question">Wat zoek je?</label>
+                <input type="text" id="question" name="search" placeholder="bv:paranoia, blij..etc">
+                <button>Zoeken</button>
+            </p>
+        </form>
+        <ul>
+            <li>
+                <h2><a href="../index.html">Aanbevolen</a></h2>
+            </li>
+            <li>
+                <h2><a href="../Html/categorie%C3%ABn.html">Categorieën</a></h2>
+            </li>
+        </ul>
+    </nav>
+    <section id=inloggen>
+        <form class="acc" method="get" action="index%20account.html">
+            <fieldset>
+                <legend>log in bij Mijn Transavia</legend>
+                <label for="question">E-mailadres</label>
+                <input type="text" name="text" value="gebruiker@domein.nl">
+                <label>Wachtwoord</label>
+                <input type="text" name="lastname">
+                <input type="submit" value="inloggen">
+            </fieldset>
+        </form>
+
+        <form class="boeking" method="get" action="index%20account.html">
+            <fieldset>
+                <legend>Log in met je boekingsgegevens</legend>
+                <label for="question">Boekingsnummer</label>
+                <input type="text" name="text" placeholder="b.v. HB234">
+                <label>Achternaam</label>
+                <input type="text" name="lastname" value="b.v. Jansen">
+                <label>Vertrekdatum</label>
+                <input type="text" name="text" value="dd-mm-jjjj">
+                <input type="submit" value="inloggen">
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <h4>Volg ons op onze social media!</h4>
+        <img src="../Images/iconen%2011.png" alt="">
+    </footer>
+</body>
+
+</html>
