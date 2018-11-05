@@ -7,7 +7,6 @@ header {
     background-color: #ff5;
     margin: -0.5em -0.5em 0 -0.5em;
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
-    position: relative;
     display: flex;
     justify-content: space-between;
 }
