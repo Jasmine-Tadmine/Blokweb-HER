@@ -11,19 +11,25 @@
     <header>
         <a href="index.html"><img src="Images/transavia-logo.png" alt=""></a>
         <div>
-            <h1>geschiedenis</h1>
-            <h1>favoriet</h1>
-            <h1>downloads</h1>
+            <a href="Html/geschiedenis%20inlog.html">
+                <h1>geschiedenis</h1>
+            </a>
+            <a href="Html/favoriet%20inlog.html">
+                <h1>favoriet</h1>
+            </a>
+            <a href="Html/downloads%20inlog.html">
+                <h1>downloads</h1>
+            </a>
             <a href="Html/inloggen.html">
                 <h1>Inloggen</h1>
             </a>
         </div>
     </header>
-    <nav class="algemeen">
+    <nav id='search'>
         <form action="../Html/zoek%20blij.html">
             <p>
                 <label for="question">Wat zoek je?</label>
-                <input type="text" id="question" name="search" placeholder="bv:paranoia, blij..etc">
+                <input type="text" id="question" name="search" placeholder="bv:paranoia, blij..etc" required>
                 <button>Zoeken</button>
             </p>
         </form>
@@ -38,13 +44,13 @@
     </nav>
 
     <main id="stories">
-        <section class="top">
+        <section>
             <h3 class="title">Top 3 verhalen deze week</h3>
             <img class="img1" src="Images/As-I-Descended-design-michelle-taormina.jpg" alt="">
             <img class="img2" src="Images/moonboy.png" alt="">
             <img class="img3" src="Images/beast-design-leo-nickolls.jpg" alt="">
         </section>
-        <nav class="sorteer">
+        <nav>
             <h3>sorteer op:</h3>
             <form action="index.html">
                 <input type="submit" value=Populair>
@@ -54,29 +60,29 @@
             </form>
             <button>kleur</button>
         </nav>
-        <section class="populair">
+        <section>
             <article>
                 <a href="Html/alzheimer%20pagina.html"><img src="Images/Alzheimer%20shadow.jpg" alt=""></a>
                 <h3>Alzheimer</h3>
                 <p>4/5</p>
             </article>
             <article>
-                <img src="Images/Alzheimer%20shadow.jpg" alt="">
+                <img src="Images/paranoia.jpg" alt="">
                 <h3>Paranoia</h3>
                 <p>4/5</p>
             </article>
             <article>
-                <img src="Images/Alzheimer%20shadow.jpg" alt="">
+                <img src="Images/verliefd.jpg" alt="">
                 <h3>Verliefd</h3>
                 <p>4/5</p>
             </article>
             <article>
-                <img src="Images/Alzheimer%20shadow.jpg" alt="">
+                <img src="Images/droom.jpg" alt="">
                 <h3>Droom</h3>
                 <p>3/5</p>
             </article>
             <article>
-                <img src="Images/Alzheimer%20shadow.jpg" alt="">
+                <img src="Images/kinderboek.jpg" alt="">
                 <h3>Kinderboek</h3>
                 <p>3/5</p>
             </article>

@@ -4,29 +4,29 @@
 
 /*eslint 'no-console': 0*/
 
-var verhaal = document.getElementById('stories');
+var desktop = document.getElementById('desktop');
 
-verhaal.onclick = function () {
-    if (verhaal.src.includes('Images/Alzheimer-03.png')) {
-        verhaal.src = '../Images/Alzheimer-p2.gif';
+desktop.onclick = function ChangeImg() {
+    if (desktop.src.includes('Images/Alzheimer-03.png')) {
+        desktop.src = '../Images/Alzheimer-p2.gif';
     } else
-    if (verhaal.src.includes('Images/Alzheimer-p2.gif')) {
-        verhaal.src = '../Images/Alzheimer-p3.gif';
+    if (desktop.src.includes('Images/Alzheimer-p2.gif')) {
+        desktop.src = '../Images/Alzheimer-p3.gif';
     } else
-    if (verhaal.src.includes('Images/Alzheimer-p3.gif')) {
-        verhaal.src = '../Images/Alzheimer-p4.gif';
+    if (desktop.src.includes('Images/Alzheimer-p3.gif')) {
+        desktop.src = '../Images/Alzheimer-p4.gif';
     } else
-    if (verhaal.src.includes('Images/Alzheimer-p4.gif')) {
-        verhaal.src = '../Images/Alzheimer-p1.gif';
+    if (desktop.src.includes('Images/Alzheimer-p4.gif')) {
+        desktop.src = '../Images/Alzheimer-p1.gif';
     } else
-    if (verhaal.src.includes('Images/Alzheimer-p1.gif')) {
-        verhaal.src = '../Images/Alzheimer-p2.gif';
+    if (desktop.src.includes('Images/Alzheimer-p1.gif')) {
+        desktop.src = '../Images/Alzheimer-p2.gif';
     }
 };
 
 var mobiel = document.getElementById('mobiel');
 
- mobiel.onclick = function () {
+mobiel.onclick = function () {
     if (mobiel.src.includes('Images/Alzheimer-mobiel.png')) {
         mobiel.src = '../Images/Alzheimer-mobiel-p1.gif';
     } else
