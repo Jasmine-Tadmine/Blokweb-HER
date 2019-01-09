@@ -9,22 +9,25 @@ header {
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
     display: flex;
     justify-content: space-between;
-    margin: -0.5em -19em 0 -0.5em;
+    margin: 0 -19em 0 -0.5em;
 }
 
 header img:first-of-type {
     margin: 1em 0 1em 1em;
-    max-height: 5em;
+    max-height: 4em;
 }
 
 h1 {
     color: #00D66C;
     font-family: nexa;
-    margin: 1em;
+    max-height: 1em;
+
 }
 
 header div {
     display: flex;
+    margin-top: -1em;
+    margin-bottom: 1em;
 }
 
 /*zoek form*/
@@ -33,7 +36,7 @@ header div {
     background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -1em -19em 0 -0.5em;
+    margin: -2em -19em 0 -0.5em;
 }
 
 nav#search form p {
@@ -115,14 +118,14 @@ li a {
 }
 
 #stories section:first-of-type img {
-    max-width: 60%;
+    max-width: 40%;
     margin-bottom: 1em;
     justify-self: center;
     align-self: center;
 }
 
 #stories section:first-of-type img:nth-of-type(2) {
-    max-width: 80%;
+    max-width: 50%;
 }
 
 /*Sorteren*/
@@ -554,21 +557,20 @@ footer img {
     #stories section:first-of-type > h3 {
         font-size: 2em;
         padding-top: 0.5em;
+        padding-bottom: 1em;
     }
 
     #stories section:first-of-type img {
-        max-width: 30%;
         transition: 0.2s ease-in-out;
     }
 
     #stories section:first-of-type img:hover,
     #stories section:first-of-type img:nth-of-type(2):hover {
-        /max-width: 50%;
-        transform: scale(1.5)
+        transform: scale(1.2)
     }
 
     #stories section:first-of-type img:nth-of-type(2) {
-        /max-width: 30%;
+        max-width: 40%;
     }
 
     /*Sorteren*/
