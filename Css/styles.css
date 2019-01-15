@@ -5,29 +5,28 @@ a {
 
 /*header*/
 header {
-    background-color: #fff;
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
-    display: flex;
-    justify-content: space-between;
     margin: 0 -19em 0 -0.5em;
+    display: grid;
+    grid-template-columns: 40% 58%;
 }
 
 header img:first-of-type {
-    margin: 1em 0 1em 1em;
-    max-height: 4em;
+    margin: 1.5em 0 1em 1em;
+    max-height: 4.5em;
 }
 
-h1 {
+header h1 {
     color: #00D66C;
     font-family: nexa;
     max-height: 1em;
-
 }
 
 header div {
     display: flex;
-    margin-top: -1em;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    justify-content: space-between;
 }
 
 /*zoek form*/
@@ -36,7 +35,7 @@ header div {
     background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -2em -19em 0 -0.5em;
+    margin: -1em -19em 0 -0.5em;
 }
 
 nav#search form p {
@@ -165,7 +164,8 @@ li a {
 #stories section:last-of-type,
 #gevoel,
 #blij,
-#categories, {
+#categories,
+    {
     margin: -0.5em -19em 5em 1em;
     display: grid;
     justify-content: center;
@@ -186,7 +186,8 @@ li a {
 #stories section:last-of-type h3,
 #gevoel h3,
 #blij h3,
-#categories h3, {
+#categories h3,
+    {
     color: #2c2f86;
     font-size: 3.6em;
     text-align: center;
@@ -196,7 +197,8 @@ li a {
 
 #stories section:last-of-type article,
 #gevoel article,
-#blij article, {
+#blij article,
+    {
     background-color: #fff;
     border: 0.1em solid darkgray;
     border-radius: 1em;
@@ -205,7 +207,8 @@ li a {
 
 #stories section:last-of-type p,
 #gevoel p,
-#blij p, {
+#blij p,
+    {
     text-align: center;
     font-family: nexa light;
     margin: 0 0 0.5em 0;
@@ -214,7 +217,8 @@ li a {
 
 #stories section:last-of-type img,
 #gevoel img,
-#blij img, {
+#blij img,
+    {
     max-width: 100%;
     border-radius: 1em 1em 0 0;
 }
@@ -493,318 +497,17 @@ footer img {
 }
 
 /*TABLET */
-@media (min-width: 48em) {}
+@media (min-width: 48em) {
 
-/*DESKTOP*/
-@media (min-width: 64em) {
     header {
-        margin-right: -0.5em;
+        background-color: blue;
     }
+}
 
-    header img:first-of-type {
-        margin: 0.5em 0.5em 0.5em 1em;
+/*DESKTOP */
+@media (min-width: 64em) {
+
+    header {
+        background-color: red;
     }
-
-    h1 {
-        font-size: 2.1em;
-        font-weight: 100;
-        margin: 1em;
-    }
-
-    /*zoek form*/
-    #search form {
-        margin-right: -0.5em;
-    }
-
-    nav#search label[for=question] {
-        font-size: 2.25em;
-        padding-top: 1em;
-    }
-
-    nav input[type=text] {
-        border-radius: 0.5em;
-        padding: 1em 1em;
-    }
-
-    nav input[placeholder] {
-        font-size: 1.2em;
-        padding: 1em 9em 1em 9em;
-    }
-
-    nav#search form button {
-        font-size: 1em;
-        margin-bottom: 4em;
-        margin-top: 2em;
-        padding: 1em 4em 1em 4em;
-    }
-
-    /*Navigatie*/
-    ul {
-        margin-right: -0.5em;
-    }
-
-    li a {
-        padding-top: 0.9em;
-        font-size: 1em;
-    }
-
-    /*top verhalen*/
-    #stories section:first-of-type {
-        margin: -1em -0.3em 1em -1em;
-        padding-bottom: 5em;
-    }
-
-    #stories section:first-of-type > h3 {
-        font-size: 2em;
-        padding-top: 0.5em;
-        padding-bottom: 1em;
-    }
-
-    #stories section:first-of-type img {
-        transition: 0.2s ease-in-out;
-    }
-
-    #stories section:first-of-type img:hover,
-    #stories section:first-of-type img:nth-of-type(2):hover {
-        transform: scale(1.2)
-    }
-
-    #stories section:first-of-type img:nth-of-type(2) {
-        max-width: 40%;
-    }
-
-    /*Sorteren*/
-    #stories > nav {
-        margin: -1.0em -0.398em 1em -0.5em;
-        padding-bottom: 1em;
-    }
-
-    #stories nav > h3 {
-        padding-left: 1em;
-        font-size: 2em;
-        margin-left: 2em;
-        margin-bottom: auto;
-    }
-
-    #stories nav button,
-    #stories nav form input[value] {
-        font-size: 1em;
-        margin: 1em 5em;
-    }
-
-    /* index/aanbevolen vormgeving */
-    #stories section:last-of-type,
-    #gevoel,
-    #blij,
-    #categories {
-        grid-template-columns: 30% 30%;
-        justify-content: space-around;
-        margin-right: -0.5em;
-    }
-
-    #gevoel h2,
-    #blij h2,
-    #categories h2 {
-        font-size: 2em;
-        grid-column: 1/4;
-    }
-
-    #stories section:last-of-type h3,
-    #gevoel h3,
-    #blij h3,
-    #categories h3 {
-        font-size: 1.6em;
-    }
-
-    #stories section:last-of-type article,
-    #gevoel article,
-    #blij article {
-        border: 0.1em solid darkgray;
-        border-radius: 1em;
-    }
-
-    #stories section:last-of-type p,
-    #gevoel p,
-    #blij p {
-        font-size: 1.6em;
-    }
-
-    #stories section:last-of-type img,
-    #gevoel img,
-    #blij img {
-        max-width: 100%;
-        border-radius: 1em 1em 0 0;
-    }
-
-    /*Categorieën vormgeving*/
-    #categories article {
-        border-radius: 1em;
-    }
-
-    #categories h3 {
-        padding: 0.5em;
-        color: #fff;
-    }
-
-    #categories {
-        background-color: #F4E6D8;
-        margin-left: -1em;
-        margin-bottom: auto;
-        padding-bottom: 6em;
-    }
-
-    /*Alzheimer detailpagina*/
-    #detail section:first-of-type {
-        margin-right: -0.5em;
-    }
-
-    #detail section:first-of-type img:hover {
-        opacity: 0.9;
-    }
-
-    #detail section:first-of-type h2 {
-        margin-right: 0.5em;
-        font-size: 2.5em;
-    }
-
-    /*Verhalen zoals...*/
-    #detail section:last-of-type {
-        background-color: #00D66C;
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-column-gap: 1em;
-        margin-right: -0.5em;
-    }
-
-    #detail section:last-of-type h3 {
-        grid-column: 1/6;
-        font-family: nexa;
-        color: #2c2f86;
-        font-size: 1.5em;
-        margin-right: -0.5em;
-        justify-self: start;
-    }
-
-    #detail section:last-of-type img {
-        align-self: center;
-        width: 50%;
-        margin: 0 0 3em 2em;
-    }
-
-    /*Alzheimer style*/
-    #verhaal section:first-child {
-        background-color: #00D66C;
-    }
-
-    #verhaal {
-        margin-right: -0.5em;
-    }
-
-    #mobiel {
-        visibility: hidden;
-        width: 40%;
-    }
-
-    #desktop {
-        visibility: visible;
-        margin-left: 20em;
-        cursor: pointer;
-    }
-
-    /*login page*/
-    #login,
-    #dwnl,
-    #faves,
-    #ges {
-        margin-right: -0.5em;
-    }
-
-    #login h3,
-    #dwnl h2,
-    #faves h2,
-    #ges h2 {
-        font-size: 2.6em;
-    }
-
-    #dwnl h3,
-    #faves h3 {
-        font-size: 2em;
-    }
-
-    #dwnl p,
-    #faves p {
-        font-size: 1.5em;
-    }
-
-    #login input,
-    #dwnl input,
-    #faves input {
-        font-size: 1.5em;
-    }
-
-    .saved {
-        margin-right: -0.5em;
-        display: grid;
-        justify-content: center;
-        background-color: #fff;
-        border: 0.1em solid darkgray;
-        border-radius: 1em;
-        max-width: 30em;
-        margin-bottom: -45em;
-    }
-
-    #categories h2 {
-        font-family: nexa;
-        text-align: center;
-        color: #00d66c;
-        font-size: 5em;
-        margin: auto;
-    }
-
-    .saved h3 {
-        color: #2c2f86;
-        font-size: 3.6em;
-        text-align: center;
-        font-family: nexa;
-        margin: 0.5em 0 0.5em 0;
-    }
-
-    .saved p {
-        text-align: center;
-        font-family: nexa light;
-        margin: 0 0 0.5em 0;
-        font-size: 2.6em;
-    }
-
-    .saved img {
-        max-width: 100%;
-        border-radius: 1em 1em 0 0;
-    }
-
-    /*Footer/social media*/
-    footer {
-        margin-right: -0.5em;
-    }
-
-    footer h4 {
-        font-size: 1.5em;
-    }
-
-    footer img {
-        max-height: 5em;
-    }
-
-    #verhaal section:first-child h3,
-    #verhaal section:first-child p {
-        font-family: nexa;
-        max-width: 40em;
-    }
-
-    #verhaal section:first-child h3 {
-        text-align: center;
-        font-size: 3em;
-        margin: 0.5em 0 0 0;
-        color: #fff;
-    }
-
 }
