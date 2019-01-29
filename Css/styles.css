@@ -652,9 +652,6 @@ footer img {
     margin: auto;
 }
 
-/*TABLET */
-@media (min-width: 48em) {}
-
 /*DESKTOP*/
 @media (min-width: 64em) {
     header {
@@ -761,7 +758,7 @@ footer img {
     #levensfase,
     #blij, #categories {
         display: grid;
-        grid-template-columns: 30% 30%;
+        grid-template-columns: 30% 30% 30%;
         justify-content: space-around;
         margin-right: -0.5em;
         margin-left: auto;
