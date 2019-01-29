@@ -923,10 +923,10 @@ footer img {
     #inloggen {
         margin-right: -0.5em;
         flex-direction:row;
+        justify-content: center;
     }
 
     #inloggen form {
-        margin-left: 15em;
         margin-top: 3em;
     }
 
