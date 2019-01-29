@@ -5,15 +5,17 @@
 /*eslint 'no-console': 0*/
 
 var saved = document.getElementById('save');
-var voegtoe = document.getElementById('add');
+var buttonChange = document.getElementById('notification');
 
 saved.onclick = function () {
     if (saved.value == "opslaan") {
         saved.value = "opgeslagen";
-        voegtoe.className('saved');
+        buttonChange.style.visibility = 'visible';
+        console.log('test');
+
     }else
     if (saved.value == "opgeslagen") {
         saved.value = "opslaan";
-        voegtoe.className('add');
+        buttonChange.style.visibility = 'hidden';
     }
 };
