@@ -565,7 +565,7 @@ nav form:last-of-type input[value]:active {
 
 #inloggen form {
     max-width: 100%;
-    margin-left: 15em;
+    align-self: center;
 }
 
 #inloggen form:first-child fieldset {
