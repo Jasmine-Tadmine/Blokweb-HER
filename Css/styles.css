@@ -846,8 +846,8 @@ footer img {
     }
 
     /*Categorieën vormgeving*/
-    #categorie h2{
-        grid-column: 2/3;
+    #categories h2{
+        grid-column: 4/1
     }
     #categories article {
         padding-left: 5em;
