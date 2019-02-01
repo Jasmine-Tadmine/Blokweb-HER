@@ -6,14 +6,15 @@ a {
 /*header*/
 header {
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
-    margin: 0 -19em 0 -0.5em;
+    margin: -0.5em -2em 0 -0.5em;
     display: grid;
     grid-template-columns: 40% 58%;
+    background-color: red;
 }
 
 header img:first-of-type {
     margin: 1.5em 0 1em 1em;
-    max-height: 4.5em;
+    max-height: 2em;
 }
 
 header h1 {
@@ -21,6 +22,7 @@ header h1 {
     font-family: nexa;
     max-height: 1em;
     transition: 0.2s ease-in-out;
+    font-size: 1em;
 }
 
 header h1:hover {
