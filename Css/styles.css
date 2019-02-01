@@ -222,17 +222,17 @@ nav form:last-of-type input[value]:active {
 
 /* index/aanbevolen vormgeving */
 #blij h2,
-#categories h2,
-#levensfase h2 {
+#levensfase h2, #categories h2 {
     font-family: nexa;
     color: #00d66c;
     font-size: 5em;
-    text-align: center;
     padding-top: 0.5em;
+    text-align: center;
+    grid-column: 3/1;
 }
 
 #blij h2,
-#levensfase h2 {
+#levensfase h2, {
     margin-top: auto;
 }
 
@@ -250,7 +250,7 @@ nav form:last-of-type input[value]:active {
 #blij article,
 #categories article,
 #levensfase article,
-#opgeslagen article {
+#opgeslagen article, #dwnl article {
     border: 0.1em solid darkgray;
     border-radius: 1em;
     background-color: #fff;
@@ -260,7 +260,7 @@ nav form:last-of-type input[value]:active {
 #stories section:last-of-type img,
 #blij img,
 #levensfase img,
-#opgeslagen img {
+#opgeslagen a:nth-child(1) img, #dwnl img {
     max-width: 100%;
     border-radius: 1em 1em 0 0;
     margin-bottom: 2em;
@@ -278,7 +278,7 @@ nav form:last-of-type input[value]:active {
 #blij h3,
 #categories h3,
 #levensfase h3,
-#opgeslagen h3 {
+#opgeslagen h3, #dwnl h3 {
     font-family: nexa;
     color: #2c2f86;
     font-size: 3.6em;
@@ -287,9 +287,8 @@ nav form:last-of-type input[value]:active {
 
 #stories section:last-of-type p,
 #blij p,
-#blij p,
 #levensfase p,
-#opgeslagen p {
+#opgeslagen p, #dwnl p {
     font-family: nexa light;
     font-size: 3.6em;
     text-align: center;
@@ -356,6 +355,7 @@ nav form:last-of-type input[value]:active {
     margin: auto;
     border-radius: 2em;
 }
+
 #detail section:first-of-type img:hover {
     opacity: 0.9;
 }
@@ -460,9 +460,17 @@ nav form:last-of-type input[value]:active {
 }
 
 /*Favorieten lijst*/
-#opgeslagen {
+#opgeslagen, #dwnl {
     display: grid;
     justify-content: center;
+}
+
+#opgeslagen a:nth-child(4) img, #dwnl a:nth-child(4) img {
+    max-width: 20%;
+    margin-left: 20em;
+    margin-right: -20em;
+    margin-bottom: 1em;
+    margin-top: -2em;
 }
 
 #opgeslagen h3 {
@@ -474,9 +482,25 @@ nav form:last-of-type input[value]:active {
     margin-bottom: 1em;
 }
 
+/*download*/
+#dwnl {
+    background-color: #F4E6D8;
+    margin-right: -19em;
+    margin-top: -1em;
+    margin-left: -1em;
+    padding-bottom: 17em;
+}
+
+/*Downloaded notification*/
+#notification-dwnl {
+    max-width: 4%;
+    padding-left: 8.3em;
+    margin-top: auto;
+    position: absolute;
+}
+
 /*Inloggen vormgeving*/
 #login,
-#dwnl,
 #faves,
 #ges,
 #opgeslagen {
@@ -491,10 +515,9 @@ nav form:last-of-type input[value]:active {
 }
 
 #login h3,
-#dwnl h2,
 #faves h2,
 #ges h2,
-#opgeslagen h2 {
+#opgeslagen h2, #dwnl h2 {
     color: #2c2f86;
     font-family: nexa;
     text-align: center;
@@ -502,8 +525,11 @@ nav form:last-of-type input[value]:active {
     margin-top: auto;
 }
 
+#dwnl h2 {
+    margin-top: 1.5em;
+}
+
 #login form,
-#dwnl form,
 #faves form {
     align-items: center;
     display: flex;
@@ -528,7 +554,6 @@ nav form:last-of-type input[value]:active {
 }
 
 #login input,
-#dwnl input,
 #faves input {
     background-color: #00D66C;
     border-radius: 1.5em;
@@ -542,14 +567,12 @@ nav form:last-of-type input[value]:active {
 }
 
 #login input:active,
-#dwnl input:active,
 #faves input:active {
     box-shadow: none;
     transition: 1s;
 }
 
 #login input:hover,
-#dwnl input:hover,
 #faves input:hover {
     background-color: #51efa1;
     transition: 0.2s ease-in-out;
@@ -661,15 +684,26 @@ footer img {
         grid-template-columns: 50% 50%;
         justify-content: space-around;
         grid-gap: 1em;
+        margin-top: auto;
+    }
+
+    #stories section:last-of-type,
+    #levensfase,
+    #blij {
         margin-left: 5em;
     }
 
     #blij h2,
-    #levensfase h2, #categories h2 {
+    #levensfase h2 {
         margin-top: auto;
-        font-size: 3em;
+        font-size: 4em;
         grid-column: 1/3;
     }
+
+    #opgeslagen a:nth-child(5) img, #dwnl a:nth-child(4) img {
+        margin-left: 21em;
+        margin-top: -1em;
+}
 }
 
 /*DESKTOP*/
@@ -764,7 +798,7 @@ footer img {
 
     /* index/aanbevolen vormgeving */
     #blij h2,
-    #levensfase h2, #categories h2 {
+    #levensfase h2 {
         margin-top: auto;
         font-size: 3em;
         grid-column: 1/4;
@@ -776,7 +810,7 @@ footer img {
 
     #stories section:last-of-type,
     #levensfase,
-    #blij, #categories {
+    #blij, #categories, #dwnl {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: space-around;
@@ -786,32 +820,35 @@ footer img {
 
     #stories section:last-of-type h3,
     #levensfase h3,
-    #blij h3, #categories h3, #opgeslagen h3 {
+    #blij h3, #categories h3, #opgeslagen h3, #dwnl h3 {
         font-size: 1.6em;
         margin-top: auto;
     }
 
     #stories section:last-of-type article,
     #levensfase article,
-    #blij article, #opgeslagen article {
+    #blij article, #opgeslagen article, #dwnl article {
         border: 0.1em solid darkgray;
         border-radius: 1em;
     }
 
     #stories section:last-of-type p,
     #levensfase p,
-    #blij p, #opgeslagen p {
+    #blij p, #opgeslagen p, #dwnl p {
         font-size: 1.6em;
     }
 
     #stories section:last-of-type img,
     #levensfase img,
-    #blij img, #opgeslagen img {
+    #blij img, #opgeslagen img:nth-child(1), #dwnl img {
         max-width: 100%;
         border-radius: 1em 1em 0 0;
     }
 
     /*Categorieën vormgeving*/
+    #categorie h2{
+        grid-column: 2/3;
+    }
     #categories article {
         padding-left: 5em;
         padding-right: 5em;
@@ -908,37 +945,58 @@ footer img {
 
     /*Favorieten lijst*/
     #opgeslagen article {
-        max-width: 70%;
+        max-width: 50%;
         margin: auto;
+    }
+
+    #opgeslagen a:nth-child(4) img, #dwnl a:nth-child(4) img {
+        max-width: 15%;
+        margin-left: 11.2em;
+        margin-top: -1em;
+    }
+
+    /*downloads*/
+    #dwnl h2 {
+        font-size: 2.5em;
+        margin-top: 2em;
+    }
+    #dwnl article, #dwnl h2 {
+        grid-column: 2/3;
+    }
+
+    #dwnl a:nth-child(4) img {
+        margin-left: 12em;
+    }
+
+    /*notification downloaded*/
+    #notification-dwnl {
+        max-width: 2%;
+        padding-left: 6.5em;
+        margin-top: -0.5em;
     }
 
     /*Inloggen vormgeving*/
     #login,
-    #dwnl,
     #faves,
     #ges, #opgeslagen {
         margin-right: -0.5em;
     }
 
     #login h3,
-    #dwnl h2,
     #faves h2,
     #ges h2 {
         font-size: 2.6em;
     }
 
-    #dwnl h3,
     #faves h3 {
         font-size: 2em;
     }
 
-    #dwnl p,
     #faves p {
         font-size: 1.5em;
     }
 
     #login input,
-    #dwnl input,
     #faves input {
         font-size: 1.5em;
     }
