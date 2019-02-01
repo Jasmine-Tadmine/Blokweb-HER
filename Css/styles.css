@@ -6,7 +6,6 @@ a {
 /*header*/
 header {
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
-    margin: -0.5em -5.1em -2em -0.5em;
     display: grid;
     grid-template-columns: 40% 58%;
     background-color: red;
