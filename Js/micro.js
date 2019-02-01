@@ -10,7 +10,7 @@ var buttonChange = document.getElementById('notification');
 saved.onclick = function () {
     if (saved.value == "opslaan") {
         saved.value = "opgeslagen";
-        buttonChange.style.visibility = 'visible';
+        buttonChange.classList.toggle = 'show';
         console.log('test');
 
     }else
