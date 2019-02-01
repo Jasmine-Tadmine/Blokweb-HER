@@ -8,10 +8,7 @@ header {
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
     display: grid;
     grid-template-columns: 40% 58%;
-    margin-bottom: -2em;
-    margin-left: -0.5em;
-    margin-top: -0.5em;
-    margin-right: -0.5em;
+    margin: -0.5em -0.5em -2em -0.5em;
 }
 
 header img:first-of-type {
@@ -33,8 +30,7 @@ header h1:hover {
 
 header div {
     display: flex;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin: 1em 0 2em 0;
     justify-content: space-between;
 }
 
@@ -82,8 +78,7 @@ nav input[placeholder] {
     color: #fff;
     font-family: nexa;
     font-size: 1.0em;
-    margin-bottom: 2em;
-    margin-top: 1em;
+    margin: 1em 0 2em 0;
     padding: 0.7em 4em 0.7em 4em;
     transition: 0.3s ease-in-out;
 }
@@ -104,7 +99,7 @@ ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin: -1.5em -0.5em 0 -0.5em;
+    margin: -1.5em -0.5em 0 -1em;
 }
 
 li a {
@@ -186,7 +181,6 @@ nav form input[value] {
     font-family: nexa;
     justify-self: center;
     margin: 0 -1.5em 0 0.5em;
-    margin-bottom: 0.5em;
     transition: 0.2s ease-in-out;
 }
 
@@ -224,7 +218,8 @@ nav form:last-of-type input[value]:active {
 
 /* index/aanbevolen vormgeving */
 #blij h2,
-#levensfase h2, #categories h2 {
+#levensfase h2,
+#categories h2 {
     font-family: nexa;
     color: #00d66c;
     font-size: 2em;
@@ -238,17 +233,15 @@ nav form:last-of-type input[value]:active {
 #levensfase {
     display: inline-block;
     padding-top: 3em;
-    margin-top: -3em;
-    margin-bottom: 5em;
-    margin-right: -0.1em;
-    margin-left:-0.1em;
+    margin: -3em -0.1em 5em -0.1em;
 }
 
 #stories section:last-of-type article,
 #blij article,
 #categories article,
 #levensfase article,
-#opgeslagen article, #dwnl article {
+#opgeslagen article,
+#dwnl article {
     border: 0.1em solid darkgray;
     border-radius: 1em;
     background-color: #fff;
@@ -258,7 +251,8 @@ nav form:last-of-type input[value]:active {
 #stories section:last-of-type img,
 #blij img,
 #levensfase img,
-#opgeslagen a:nth-child(1) img, #dwnl img {
+#opgeslagen a:nth-child(1) img,
+#dwnl img {
     max-width: 100%;
     border-radius: 1em 1em 0 0;
     margin-bottom: 2em;
@@ -276,7 +270,8 @@ nav form:last-of-type input[value]:active {
 #blij h3,
 #categories h3,
 #levensfase h3,
-#opgeslagen h3, #dwnl h3 {
+#opgeslagen h3,
+#dwnl h3 {
     font-family: nexa;
     color: #2c2f86;
     font-size: 1.6em;
@@ -287,7 +282,8 @@ nav form:last-of-type input[value]:active {
 #stories section:last-of-type p,
 #blij p,
 #levensfase p,
-#opgeslagen p, #dwnl p {
+#opgeslagen p,
+#dwnl p {
     font-family: nexa light;
     font-size: 1.6em;
     text-align: center;
@@ -311,9 +307,7 @@ nav form:last-of-type input[value]:active {
 #categories {
     background-color: #F4E6D8;
     padding-bottom: 6em;
-    margin-top: -2em;
-    margin-right: -0.5em;
-    margin-left: -1em;
+    margin: -2em -0.5em 0 -1em;
 }
 
 #categories article {
@@ -332,28 +326,31 @@ nav form:last-of-type input[value]:active {
 }
 
 /*Alzheimer detailpagina*/
-#notification {
-    max-width: 4%;
-    padding-left: 5.3em;
-    margin-top: auto;
+#popup {
+    max-width: 3%;
     position: absolute;
-    transition: 0.2s ease;
-    visibility: hidden;
+    padding-left: 1.5em;
+    margin-top: auto;
+    transition: 0.1s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 #detail section:first-of-type {
     background-color: #F4E6D8;
-    margin: -1em -19em 0 -0.5em;
+    margin: -1em -0.5em 0 -0.5em;
     display: flex;
     flex-direction: column;
     padding-bottom: 4em;
 }
 
 #detail section:first-of-type img {
-    max-width: 100%;
+    max-width: 90%;
     display: block;
     margin: auto;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 #detail section:first-of-type img:hover {
@@ -363,7 +360,7 @@ nav form:last-of-type input[value]:active {
 #detail section:first-of-type h2 {
     font-family: nexa;
     color: #00D66C;
-    font-size: 4em;
+    font-size: 2em;
     grid-column: 2/4;
     grid-row: 1/1;
     text-align: center;
@@ -377,9 +374,8 @@ nav form:last-of-type input[value]:active {
     box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
     border-style: none;
     color: #fff;
-    margin: auto;
-    margin-top: 1em;
-    font-size: 3em;
+    margin: 1em auto 0 auto;
+    font-size: 1.5em;
     grid-column: 2/4;
     grid-row: 1/2;
     padding: 1em;
@@ -399,35 +395,37 @@ nav form:last-of-type input[value]:active {
 #detail section:last-of-type {
     background-color: #00D66C;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 30% 30% 30%;
     grid-column-gap: 1em;
-    margin: -0.5em -19em 0em -0.5em;
+    margin: -0.5em -0.5em 0 -0.5em;
+    padding-bottom: 1em;
 }
 
 #detail section:last-of-type h3 {
     grid-column: 1/6;
     font-family: nexa;
     color: #2c2f86;
-    font-size: 3.5em;
+    font-size: 1.4em;
     margin: 0.5em 0 0.5em 0.5em;
     justify-self: start;
 }
 
 #detail section:last-of-type img {
-    align-self: center;
-    width: 80%;
-    margin: 0 0 3em 2em;
+    width: 90%;
+    margin: 0 0 2em 0.2em;
+    justify-self: center;
 }
 
 /*Alzheimer pagina*/
 #verhaal {
-    margin-right: -19em;
+    margin: 0.5em -0.5em 0 0;
 }
 
 #verhaal section:first-child {
     background-color: #00D66C;
     margin-left: -0.5em;
     padding: 2em;
+    padding-bottom: 4em;
 }
 
 #verhaal section:first-child h3,
@@ -438,13 +436,13 @@ nav form:last-of-type input[value]:active {
 #verhaal section:first-child h3 {
     text-align: center;
     font-size: 3em;
-    margin: 0.5em 0 0 0;
+    margin-top: auto;
     color: #fff;
 }
 
 #verhaal section:last-child {
     background: radial-gradient(circle, rgba(65, 65, 65, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(79, 84, 85, 1) 100%);
-    margin-left: -0.5em;
+    margin: 1.5em 0 0 -0.5em;
 }
 
 #desktop {
@@ -460,17 +458,17 @@ nav form:last-of-type input[value]:active {
 }
 
 /*Favorieten lijst*/
-#opgeslagen, #dwnl {
+#opgeslagen,
+#dwnl {
     display: grid;
-    justify-content: center;
+    justify-self: center;
+    margin: -2em -0.5em 1em 0.5em;
 }
 
-#opgeslagen a:nth-child(4) img, #dwnl a:nth-child(4) img {
+#opgeslagen a:nth-child(4) img,
+#dwnl a:nth-child(4) img {
     max-width: 20%;
-    margin-left: 20em;
-    margin-right: -20em;
-    margin-bottom: 1em;
-    margin-top: -2em;
+    margin: -0.5em 5em 1em 8em;
 }
 
 #opgeslagen h3 {
@@ -478,23 +476,20 @@ nav form:last-of-type input[value]:active {
 }
 
 #opgeslagen p {
-    margin-top: -0.5em;
     margin-bottom: 1em;
 }
 
 /*download*/
 #dwnl {
     background-color: #F4E6D8;
-    margin-right: -19em;
-    margin-top: -1em;
-    margin-left: -1em;
-    padding-bottom: 17em;
+    margin: -1em -0.5em 0 -0.5em;
+    padding: 1em;
 }
 
 /*Downloaded notification*/
 #notification-dwnl {
-    max-width: 4%;
-    padding-left: 8.3em;
+    max-width: 3%;
+    padding-left: 2.6em;
     margin-top: auto;
     position: absolute;
 }
@@ -505,28 +500,25 @@ nav form:last-of-type input[value]:active {
 #ges,
 #opgeslagen {
     background-color: #F4E6D8;
-    margin: -1em -19em 0 -0.5em;
-    padding-top: 5em;
-    padding-bottom: 63em;
-}
-
-#ges {
-    padding-bottom: 73em;
+    margin: -1em -0.5em 0 -0.5em;
+    padding-bottom: 2em;
+    padding: 2em;
 }
 
 #login h3,
 #faves h2,
 #ges h2,
-#opgeslagen h2, #dwnl h2 {
+#opgeslagen h2,
+#dwnl h2 {
     color: #2c2f86;
     font-family: nexa;
     text-align: center;
-    font-size: 3.6em;
+    font-size: 1.6em;
     margin-top: auto;
 }
 
 #dwnl h2 {
-    margin-top: 1.5em;
+    margin-top: 0.5em;
 }
 
 #login form,
@@ -541,14 +533,14 @@ nav form:last-of-type input[value]:active {
 #faves h3 {
     text-align: center;
     font-family: nexa;
-    font-size: 4em;
+    font-size: 2em;
     margin-bottom: auto;
 }
 
 #dwnl p,
 #faves p {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.2em;
     font-family: nexa;
     margin-top: auto;
 }
@@ -561,7 +553,7 @@ nav form:last-of-type input[value]:active {
     box-shadow: inset 0 -0.1875em 0.0625em #0e104c;
     color: #fff;
     font-family: nexa;
-    font-size: 2.5em;
+    font-size: 1em;
     margin-top: 1em;
     padding: 0.7em 4em 0.7em 4em;
 }
@@ -581,7 +573,7 @@ nav form:last-of-type input[value]:active {
 /*Inlog pagina*/
 #inloggen {
     background-color: #00D66C;
-    margin: -1em -19em 0 -0.5em;
+    margin: -1em -0.5em 0 -0.5em;
     display: flex;
     flex-direction: column;
 }
@@ -593,8 +585,8 @@ nav form:last-of-type input[value]:active {
 
 #inloggen form:first-child fieldset {
     display: flex;
-    padding: 5em;
-    margin: 5em 0 5em 0;
+    padding: 4em 2em 2em 2em;
+    margin: 4em 0 5em 0;
     background-color: white;
     border-radius: 1em;
 }
@@ -603,8 +595,8 @@ nav form:last-of-type input[value]:active {
     background-color: #f5f8fa;
     display: flex;
     position: relative;
-    padding: 5em;
-    margin-bottom: 10em;
+    padding: 4em 2em 2em 2em;
+    margin-bottom: 8em;
     border-radius: 1em;
 }
 
@@ -612,14 +604,14 @@ nav form:last-of-type input[value]:active {
     position: absolute;
     font-family: nexa;
     color: #2800a0;
-    font-size: 3.5em;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
 #inloggen label {
-    padding: 1em 0 0.5em 0;
+    margin: 1em 0 1em 0;
     font-family: nexa;
-    font-size: 3em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -629,12 +621,11 @@ nav form:last-of-type input[value]:active {
 
 #inloggen input,
 #inloggen input {
-    font-size: 3.5em;
+    font-size: 1.5em;
     border-radius: 0.20em;
     font-family: nexa;
     padding: 0.5em;
     transition: 0.2s;
-    z-index: 2;
 }
 
 #inloggen button {
@@ -645,7 +636,7 @@ nav form:last-of-type input[value]:active {
     border-style: none;
     color: #fff;
     margin: 1em 0 0.5em 0.2em;
-    font-size: 3em;
+    font-size: 1.3em;
     padding: 0.7em 2em 0.7em 2em;
     transition: 0.1s ease-in-out;
 }
@@ -657,53 +648,112 @@ nav form:last-of-type input[value]:active {
 /*Footer/social media*/
 footer {
     background-color: #f7f7f7;
-    margin: -0.5em -19em 0 -1em;
+    margin: -1.5em -0.5em 0 -1em;
 }
 
 footer h4 {
     color: #2c2f86;
     font-family: nexa;
     text-align: center;
-    font-size: 3.5em;
-    margin: auto;
+    font-size: 1.2em;
     padding: 0.5em;
 }
 
 footer img {
-    max-height: 12em;
+    max-width: 100%;
     display: block;
     margin: auto;
 }
 
 /*TABLET */
 @media (min-device-width: 48em) {
+
+    /*header*/
+    header img:first-of-type {
+        max-height: 3.1em;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    /*Navigatie*/
+    li a {
+        font-size: 1.5em;
+    }
+
+    /*top verhalen*/
+    #stories section:first-of-type > h3, #opgeslagen h3 {
+        font-size: 2em;
+    }
+
+    /*Sorteren*/
+    #stories nav > h3 {
+        font-size: 2em;
+    }
+    #stories nav button,
+    nav form input[value] {
+        font-size: 1.2em;
+    }
+
     #stories section:last-of-type,
     #levensfase,
-    #blij, #categories {
+    #blij,
+    #categories {
         display: grid;
         grid-template-columns: 50% 50%;
         justify-content: space-around;
         grid-gap: 1em;
-        margin-top: auto;
-    }
-
-    #stories section:last-of-type,
-    #levensfase,
-    #blij {
-        margin-left: 5em;
+        margin: -1em -0.5em 0 -0.5em;
+        padding: 2em;
     }
 
     #blij h2,
-    #levensfase h2 {
+    #levensfase h2, #categories h2 {
         margin-top: auto;
-        font-size: 4em;
+        font-size: 3em;
         grid-column: 1/3;
     }
 
-    #opgeslagen a:nth-child(5) img, #dwnl a:nth-child(4) img {
+    /*Alzheimer detailpagina*/
+    #popup {
+        padding-left: 3.5em;
+    }
+
+    #detail section:first-of-type h2 {
+        font-size: 3em;
+    }
+
+    #opgeslagen a:nth-child(5) img,
+    #dwnl a:nth-child(4) img {
         margin-left: 21em;
         margin-top: -1em;
-}
+    }
+    #detail section:first-of-type input {
+        font-size: 2em;
+    }
+    /*Verhalen zoals...*/
+    #detail section:last-of-type h3 {
+        font-size: 2.2em;
+    }
+    /*Favorieten lijst*/
+    #opgeslagen a:nth-child(4) img, #dwnl a:nth-child(4) img {
+       margin: -0.5em 8em 1em 17.5em;
+    }
+    /*Downloaded notification*/
+    #notification-dwnl {
+       padding-left: 5.3em;
+    }
+    /*Inloggen vormgeving*/
+    #login h3,
+    #faves h2,
+    #ges h2,
+    #opgeslagen h2, #dwnl h2 {
+        font-size: 2.5em;
+    }
+    #faves, #ges {
+        padding-bottom: 26em;
+    }
 }
 
 /*DESKTOP*/
@@ -804,13 +854,15 @@ footer img {
         grid-column: 1/4;
     }
 
-    #categories  {
+    #categories {
         margin-top: auto;
     }
 
     #stories section:last-of-type,
     #levensfase,
-    #blij, #categories, #dwnl {
+    #blij,
+    #categories,
+    #dwnl {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: space-around;
@@ -820,35 +872,45 @@ footer img {
 
     #stories section:last-of-type h3,
     #levensfase h3,
-    #blij h3, #categories h3, #opgeslagen h3, #dwnl h3 {
+    #blij h3,
+    #categories h3,
+    #opgeslagen h3,
+    #dwnl h3 {
         font-size: 1.6em;
         margin-top: auto;
     }
 
     #stories section:last-of-type article,
     #levensfase article,
-    #blij article, #opgeslagen article, #dwnl article {
+    #blij article,
+    #opgeslagen article,
+    #dwnl article {
         border: 0.1em solid darkgray;
         border-radius: 1em;
     }
 
     #stories section:last-of-type p,
     #levensfase p,
-    #blij p, #opgeslagen p, #dwnl p {
+    #blij p,
+    #opgeslagen p,
+    #dwnl p {
         font-size: 1.6em;
     }
 
     #stories section:last-of-type img,
     #levensfase img,
-    #blij img, #opgeslagen img:nth-child(1), #dwnl img {
+    #blij img,
+    #opgeslagen img:nth-child(1),
+    #dwnl img {
         max-width: 100%;
         border-radius: 1em 1em 0 0;
     }
 
     /*Categorieën vormgeving*/
-    #categories h2{
+    #categories h2 {
         grid-column: 4/1
     }
+
     #categories article {
         padding-left: 5em;
         padding-right: 5em;
@@ -857,7 +919,7 @@ footer img {
 
     #categories h3 {
         padding: 0.5em;
-        margin-top:  1em;
+        margin-top: 1em;
     }
 
     #categories {
@@ -869,6 +931,7 @@ footer img {
         max-width: 2%;
         padding-left: 4.5em;
         margin-top: -0.5em;
+
     }
 
     #detail section:first-of-type {
@@ -900,7 +963,7 @@ footer img {
         margin-top: 12em;
         grid-column: 2/2;
         max-width: 70%
-}
+    }
 
     /*Verhalen zoals...*/
     #detail section:last-of-type {
@@ -949,7 +1012,8 @@ footer img {
         margin: auto;
     }
 
-    #opgeslagen a:nth-child(4) img, #dwnl a:nth-child(4) img {
+    #opgeslagen a:nth-child(4) img,
+    #dwnl a:nth-child(4) img {
         max-width: 15%;
         margin-left: 11.2em;
         margin-top: -1em;
@@ -960,7 +1024,9 @@ footer img {
         font-size: 2.5em;
         margin-top: 2em;
     }
-    #dwnl article, #dwnl h2 {
+
+    #dwnl article,
+    #dwnl h2 {
         grid-column: 2/3;
     }
 
@@ -978,7 +1044,8 @@ footer img {
     /*Inloggen vormgeving*/
     #login,
     #faves,
-    #ges, #opgeslagen {
+    #ges,
+    #opgeslagen {
         margin-right: -0.5em;
     }
 
@@ -1004,7 +1071,7 @@ footer img {
     /*Inlog pagina*/
     #inloggen {
         margin-right: -0.5em;
-        flex-direction:row;
+        flex-direction: row;
         justify-content: center;
     }
 

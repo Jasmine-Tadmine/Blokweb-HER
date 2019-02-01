@@ -5,17 +5,16 @@
 /*eslint 'no-console': 0*/
 
 var saved = document.getElementById('save');
-var buttonChange = document.getElementById('notification');
+var buttonChange = document.getElementById('popup');
 
 saved.onclick = function () {
     if (saved.value == "opslaan") {
         saved.value = "opgeslagen";
-        buttonChange.classList.toggle = 'show';
-        console.log('test');
-
+        buttonChange.classList.toggle('hidden');
     }else
     if (saved.value == "opgeslagen") {
         saved.value = "opslaan";
-        buttonChange.style.visibility = 'hidden';
+        buttonChange.classList.toggle('hidden');
+
     }
 };
