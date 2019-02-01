@@ -9,6 +9,10 @@ header {
     display: grid;
     grid-template-columns: 40% 58%;
     background-color: red;
+    margin-bottom: -2em;
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+    margin-right: -2em;
 }
 
 header img:first-of-type {
