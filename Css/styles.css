@@ -3,7 +3,7 @@ a {
     text-decoration: none;
 }
 
-/*header*/
+/*----------header----------*/
 header {
     box-shadow: 0 0.5125em 0.725em 0 rgba(0, 0, 0, .15);
     display: grid;
@@ -34,7 +34,7 @@ header div {
     justify-content: space-between;
 }
 
-/*zoek form*/
+/*----------zoek form----------*/
 #search form {
     background-image: url(../Images/spring-break-banner.jpg);
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ nav input[placeholder] {
     transition: 1s;
 }
 
-/*Navigatie*/
+/*----------Navigatie----------*/
 ul {
     border-bottom-color: #F8F7F7;
     border-bottom-style: solid;
@@ -122,7 +122,7 @@ li a:hover {
     color: #2c2f86;
 }
 
-/*top verhalen*/
+/*----------top verhalen----------*/
 #stories section:first-of-type {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -151,7 +151,7 @@ li a:hover {
     max-width: 100%;
 }
 
-/*Sorteren*/
+/*----------Sorteren----------*/
 #stories > nav {
     background-color: #F4E6D8;
     margin: -1em -0.5em 1em -0.5em;
@@ -199,7 +199,7 @@ nav form:last-of-type input[value]:active {
     transition: 1s;
 }
 
-/*Opkomend*/
+/*----------Opkomend----------*/
 #opkomend form:first-of-type input[value]:active {
     box-shadow: none;
     transition: 1s;
@@ -216,7 +216,7 @@ nav form:last-of-type input[value]:active {
     box-shadow: none;
 }
 
-/* index/aanbevolen vormgeving */
+/*----------index/aanbevolen vormgeving----------*/
 #blij h2,
 #levensfase h2,
 #categories h2 {
@@ -290,12 +290,12 @@ nav form:last-of-type input[value]:active {
     margin: -0.5em 0 0.5em 0;
 }
 
-/*Levensfase*/
+/*----------Levensfase----------*/
 #levensfase h3 {
     margin-top: auto;
 }
 
-/*Categorieën vormgeving*/
+/*----------Categorieën vormgeving----------*/
 #locatie li:last-of-type a {
     color: #2c2f86;
 }
@@ -325,7 +325,7 @@ nav form:last-of-type input[value]:active {
     color: #fff;
 }
 
-/*Alzheimer detailpagina*/
+/*----------Alzheimer detailpagina----------*/
 #popup {
     max-width: 3%;
     position: absolute;
@@ -391,7 +391,7 @@ nav form:last-of-type input[value]:active {
     transition: 1s;
 }
 
-/*Verhalen zoals...*/
+/*----------Verhalen zoals...----------*/
 #detail section:last-of-type {
     background-color: #00D66C;
     display: grid;
@@ -416,7 +416,7 @@ nav form:last-of-type input[value]:active {
     justify-self: center;
 }
 
-/*Alzheimer pagina*/
+/*----------Alzheimer pagina VERHAAL MICROINTERACTIE----------*/
 #verhaal {
     margin: 0.5em -0.5em 0 0;
 }
@@ -457,7 +457,7 @@ nav form:last-of-type input[value]:active {
     display: block;
 }
 
-/*Favorieten lijst*/
+/*----------Favorieten lijst----------*/
 #opgeslagen,
 #dwnl {
     display: grid;
@@ -479,14 +479,14 @@ nav form:last-of-type input[value]:active {
     margin-bottom: 1em;
 }
 
-/*download*/
+/*----------download----------*/
 #dwnl {
     background-color: #F4E6D8;
     margin: -1em -0.5em 0 -0.5em;
     padding: 1em;
 }
 
-/*Downloaded notification*/
+/*----------Downloaded notification----------*/
 #notification-dwnl {
     max-width: 3%;
     padding-left: 2.6em;
@@ -494,7 +494,7 @@ nav form:last-of-type input[value]:active {
     position: absolute;
 }
 
-/*Inloggen vormgeving*/
+/*----------Inloggen vormgeving----------*/
 #login,
 #faves,
 #ges,
@@ -570,7 +570,7 @@ nav form:last-of-type input[value]:active {
     transition: 0.2s ease-in-out;
 }
 
-/*Inlog pagina*/
+/*----------Inlog pagina----------*/
 #inloggen {
     background-color: #00D66C;
     margin: -1em -0.5em 0 -0.5em;
@@ -645,7 +645,7 @@ nav form:last-of-type input[value]:active {
     background-color: #ff6d94;
 }
 
-/*Footer/social media*/
+/*----------Footer/social media----------*/
 footer {
     background-color: #f7f7f7;
     margin: -1.5em -0.5em 0 -1em;
@@ -665,7 +665,7 @@ footer img {
     margin: auto;
 }
 
-/*TABLET */
+/*----------TABLET----------*/
 @media (min-device-width: 48em) {
 
     /*header*/
@@ -677,20 +677,22 @@ footer img {
         font-size: 1.2em;
     }
 
-    /*Navigatie*/
+    /*----------Navigatie----------*/
     li a {
         font-size: 1.5em;
     }
 
-    /*top verhalen*/
-    #stories section:first-of-type > h3, #opgeslagen h3 {
+    /*----------top verhalen----------*/
+    #stories section:first-of-type > h3,
+    #opgeslagen h3 {
         font-size: 2em;
     }
 
-    /*Sorteren*/
+    /*----------Sorteren----------*/
     #stories nav > h3 {
         font-size: 2em;
     }
+
     #stories nav button,
     nav form input[value] {
         font-size: 1.2em;
@@ -709,13 +711,14 @@ footer img {
     }
 
     #blij h2,
-    #levensfase h2, #categories h2 {
+    #levensfase h2,
+    #categories h2 {
         margin-top: auto;
         font-size: 3em;
         grid-column: 1/3;
     }
 
-    /*Alzheimer detailpagina*/
+    /*----------Alzheimer detailpagina MICROINTERACTIE OPSLAAN----------*/
     #popup {
         padding-left: 3.5em;
     }
@@ -729,57 +732,56 @@ footer img {
         margin-left: 21em;
         margin-top: -1em;
     }
+
     #detail section:first-of-type input {
         font-size: 2em;
     }
-    /*Verhalen zoals...*/
+
+    /*----------Verhalen zoals...----------*/
     #detail section:last-of-type h3 {
         font-size: 2.2em;
     }
-    /*Favorieten lijst*/
-    #opgeslagen a:nth-child(4) img, #dwnl a:nth-child(4) img {
-       margin: -0.5em 8em 1em 17.5em;
+
+    /*----------Favorieten lijst----------*/
+    #opgeslagen a:nth-child(4) img,
+    #dwnl a:nth-child(4) img {
+        margin: -0.5em 8em 1em 17.5em;
     }
-    /*Downloaded notification*/
+
+    /*----------Downloaded notification MICROINTERACTIE----------*/
     #notification-dwnl {
-       padding-left: 5.3em;
+        padding-left: 5.3em;
     }
-    /*Inloggen vormgeving*/
+
+    /*----------Inloggen vormgeving----------*/
     #login h3,
     #faves h2,
     #ges h2,
-    #opgeslagen h2, #dwnl h2 {
+    #opgeslagen h2,
+    #dwnl h2 {
         font-size: 2.5em;
     }
-    #faves, #ges {
+
+    #faves,
+    #ges {
         padding-bottom: 26em;
     }
 }
 
-/*DESKTOP*/
+/*----------DESKTOP----------*/
 @media (min-width: 64em) {
-    header {
-        margin-right: -0.5em;
-        margin-bottom: -2em;
-    }
-
     header img:first-of-type {
         margin-top: 1em;
-        max-width: 40%
+        max-height: 60%
     }
 
-    h1 {
+    header h1 {
         margin-top: 0.2em;
-        font-size: 1.5em;
-    }
-
-    /*zoek form*/
-    #search form {
-        margin-right: -0.5em;
+        font-size: 2em;
     }
 
     nav#search label[for=question] {
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
 
     nav input[placeholder] {
@@ -791,17 +793,17 @@ footer img {
         font-size: 1.2em;
     }
 
-    /*Navigatie*/
+    /*----------Navigatie----------*/
     ul {
         margin-right: -0.5em;
         margin-top: -1.5em;
     }
 
     li a {
-        font-size: 1.3em;
+        font-size: 1.7em;
     }
 
-    /*top verhalen*/
+    /*----------top verhalen----------*/
     #stories section:first-of-type {
         margin: 0 -0.3em 1em -1em;
     }
@@ -819,7 +821,7 @@ footer img {
 
     #stories section:first-of-type img:hover,
     #stories section:first-of-type img:nth-of-type(2):hover {
-        max-width: 60%;
+        max-width: 56%;
         transform: scale(1.2)
     }
 
@@ -827,7 +829,7 @@ footer img {
         max-width: 60%;
     }
 
-    /*Sorteren*/
+    /*----------Sorteren----------*/
     #stories > nav {
         margin: -1.0em -0.398em 1em -0.5em;
         padding-bottom: 1em;
@@ -842,11 +844,11 @@ footer img {
 
     #stories nav button,
     #stories nav form input[value] {
-        font-size: 1em;
+        font-size: 1.5em;
         margin: 1em 5em;
     }
 
-    /* index/aanbevolen vormgeving */
+    /*----------index/aanbevolen vormgeving----------*/
     #blij h2,
     #levensfase h2 {
         margin-top: auto;
@@ -866,8 +868,7 @@ footer img {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: space-around;
-        margin-right: -0.5em;
-        margin-left: auto;
+        margin-bottom: -3em;
     }
 
     #stories section:last-of-type h3,
@@ -906,7 +907,7 @@ footer img {
         border-radius: 1em 1em 0 0;
     }
 
-    /*Categorieën vormgeving*/
+    /*----------Categorieën vormgeving----------*/
     #categories h2 {
         grid-column: 4/1
     }
@@ -926,16 +927,14 @@ footer img {
         margin-left: -1em;
     }
 
-    /*Alzheimer detailpagina*/
-    #notification {
+    /*----------Alzheimer detailpagina----------*/
+    #popup {
         max-width: 2%;
-        padding-left: 4.5em;
+        padding-left: 6.6em;
         margin-top: -0.5em;
-
     }
 
     #detail section:first-of-type {
-        margin-right: -0.5em;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 20% 20%;
@@ -950,13 +949,14 @@ footer img {
 
     #detail section:first-of-type h2 {
         margin-top: 1em;
-        margin-left: -3em;
+        margin-left: -7em
     }
 
     #detail section:first-of-type input {
-        margin-top: 4em;
         font-size: 2.5em;
         margin-left: 4em;
+        margin-top: 5em;
+        padding-bottom: 2.1em;
     }
 
     #detail section:first-of-type a:nth-child(4) {
@@ -965,22 +965,23 @@ footer img {
         max-width: 70%
     }
 
-    /*Verhalen zoals...*/
+    /*----------Verhalen zoals...----------*/
     #detail section:last-of-type {
-        margin-right: -0.5em;
+        margin-bottom: -3em;
     }
 
     #detail section:last-of-type h3 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     #detail section:last-of-type img {
-        width: 50%;
+        width: 60%;
     }
 
-    /*Alzheimer pagina*/
+    /*----------Alzheimer pagina----------*/
     #verhaal section:first-child {
         margin-top: 1.5em;
+        margin-bottom: -1.5em;
     }
 
     #verhaal section:first-child p {
@@ -988,10 +989,6 @@ footer img {
         font-size: 1.5em;
         padding: 0.4em;
         max-width: 60%;
-    }
-
-    #verhaal {
-        margin-right: -0.5em;
     }
 
     #mobiel {
@@ -1006,7 +1003,7 @@ footer img {
         margin-left: 35em;
     }
 
-    /*Favorieten lijst*/
+    /*----------Favorieten lijst----------*/
     #opgeslagen article {
         max-width: 50%;
         margin: auto;
@@ -1015,11 +1012,10 @@ footer img {
     #opgeslagen a:nth-child(4) img,
     #dwnl a:nth-child(4) img {
         max-width: 15%;
-        margin-left: 11.2em;
-        margin-top: -1em;
+        margin: -1em -25em 0 22em;
     }
 
-    /*downloads*/
+    /*----------downloads----------*/
     #dwnl h2 {
         font-size: 2.5em;
         margin-top: 2em;
@@ -1031,22 +1027,23 @@ footer img {
     }
 
     #dwnl a:nth-child(4) img {
-        margin-left: 12em;
+        margin-left: 15em;
     }
 
-    /*notification downloaded*/
+    /*----------notification downloaded----------*/
     #notification-dwnl {
         max-width: 2%;
-        padding-left: 6.5em;
+        padding-left: 9.5em;
         margin-top: -0.5em;
     }
 
-    /*Inloggen vormgeving*/
+    /*----------Inloggen vormgeving----------*/
     #login,
     #faves,
     #ges,
     #opgeslagen {
         margin-right: -0.5em;
+        padding-bottom: 2em;
     }
 
     #login h3,
@@ -1066,9 +1063,10 @@ footer img {
     #login input,
     #faves input {
         font-size: 1.5em;
+        margin-bottom: 5em;
     }
 
-    /*Inlog pagina*/
+    /*----------Inlog pagina----------*/
     #inloggen {
         margin-right: -0.5em;
         flex-direction: row;
@@ -1077,6 +1075,7 @@ footer img {
 
     #inloggen form {
         margin-top: 3em;
+        padding: 2em;
     }
 
     #inloggen legend {
@@ -1089,16 +1088,16 @@ footer img {
 
     #inloggen input,
     #inloggen input {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     #inloggen button {
         font-size: 2em;
     }
 
-    /*Footer/social media*/
+    /*----------Footer/social media----------*/
     footer {
-        margin-right: -0.5em;
+        margin-top: -5em;
     }
 
     footer h4 {
